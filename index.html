@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+  </head>
+  <body>
+
+  
+
+<body>
+  <!--create a general container for everything so it looks nice
+  -->
+  <div id="container">
+    <!--title of section
+    -->
+  <h2>Create a Strong Password!</h2>
+   
+    <!--instructions of what needs to be within the users password 
+    -->
+  <div id="instructions">
+    <!--i used different ids and texts so that I could individually change which would turn red and which would turn green based on what requirements were fufilled or not.. also used a div tag so i can style everything using css differently
+    -->
+    <p > Your password <span class="underline">must</span>...</p>
+    <p id="instructions_Ch" class = "instructions"> have at least 10 characters </p>
+    <p id="instructions_S" class = "instructions"> have at least 1 of these symbols: (!@#$%^&*)</p>
+    <p id="instructions_Ca" class = "instructions"> have at least 1 capital letter</p>
+    <p id="instructions_N" class = "instructions"> have at least 1 number</p>
+    
+  </div>
+    <!--message saying where to input the password
+    -->
+  <p id = "results" class = "sidebar">Enter your password here!!</p>
+
+    <!--container for all the inputs
+    -->
+  <div class="input">
+    <!--create a input place for users to enter password
+    -->
+    <input type="text" id="password" class = "sidebar">
+    <!--created a link that is like a button so i can toggle password visibility
+    -->
+    <a href="#" class = "fileButton" id="eyeButton">
+      <!--show the image for the eye icon
+      -->
+     <img id="eyeImage" src = "eye.png" alt="eye.png">
+    </a>
+    <!--input field for teh file upload, hidden at first..
+    -->
+    <input type="file" id="fileInput" style="display: none;">
+  </div>
+    <!--button to submit the password for review
+    -->
+  <button id="btn" class = "sidebar">Enter</button>
+
+    <!--some break lines so that everything isnt right after another
+    -->
+    <br><br>
+    <!--message saying how strong the password is or not
+    -->
+    <p id="strengthTitle">How strong is your password?</p>
+    <!--creates the strength meter by creating different classes for different colors that I will style later but putting them in the same div so that they are all grouped together
+    -->
+    <div class="strength-meter" id = "SM">
+      <div class="red" id = "SM"></div>
+      <div class="yellow" id = "SM"></div>
+      <div class="green" id = "SM"></div>
+      <div class="pointer" id = "pointer"></div>
+    </div>
+    <!--different results that are shown after all the user input is correct
+    -->
+    <p id="result_info"></p>
+    <p id="result_passwd"></p>
+    <p id="result_failedattempt"></p>
+    <p id="result_shortestattempt"></p>
+    
+  
+    <!--more breaks so that it is not all cramped together
+    -->
+  <br><br><br><br>
+    <!--title of the section 
+    -->
+  <h2>Generate a Random Password!</h2>
+    <!--title
+    -->
+  <p id="randomPassword">Your Generated Password: ________</p>
+    <!--button for the user to generate a random password
+    -->
+  <button id="randomBtn">Generate</button>
+ 
+    <!--ending div tag from previous container that holds all the features
+    -->
+  </div>
+  
+
+ 
+
+
+  
+  <!--
+  -->
+
+
+  
+  <script src="script.js"></script>
+
+ 
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
