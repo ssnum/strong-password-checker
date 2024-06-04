@@ -1,0 +1,174 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h2{
+  /*changes the font for the titles and centers them*/
+  font-size:1.5em;
+  text-align:center;
+  font-family:"Times New Roman";
+}
+
+body{
+  /*sets the background color as white*/
+  background-color: #ffffff;
+
+}
+button{
+  /*creates border and sets color for all the buttons */
+  color:black;
+  border-radius:5px;
+  border-color:white; 
+  margin-top:5px;
+  
+}
+
+#instructions{
+  /*creates a border for the instructions with margins to keep text from the border line*/
+
+  border:solid 2px #f5fcff;
+  border-style:double;
+  padding:20px; 
+  float:right;
+  margin:24px;
+  
+}
+/*make certain items underlined*/
+.underline{
+  text-decoration: underline;
+}
+#container{
+  /*change background color, adjust sixe, add borders to all four sides and padding so things don't look cramped*/
+  background-color:#a8e2ff;
+  width:600px;
+  margin:0 auto;
+  border-left: 15px double white;
+  border-right:15px double white;
+  border-top: 15px double white;
+  border-bottom:15px double white;
+  padding: 40px;
+}
+
+
+#results{
+  /*change line height to make things more readable*/
+  line-height:2em;
+}
+
+/* asked chat gpt on the approach to putting the colored blocks in a row */
+.strength-meter {
+  /*sets how big the meter is and creates a white border  */
+  width: 200px;
+  height: 30px;
+  border: 3px solid #e7e4e4;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.strength-meter div {
+  /*sets height and position for the overall div that contains the different colors and pointers*/
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.red {
+  background-color: #e56666;
+  left: 0;
+  /*divides div into three parts and makes one third of it red*/
+  width: 33.33%;
+}
+.yellow {
+  background-color: #eaea80;
+  left: 33.33%;
+  /*makes the yellow section one third of the div */
+
+  width: 33.33%;
+}
+.green {
+  /*makes the green section one third of the div on the right*/
+
+  background-color: #68ac68;
+  left: 66.66%;
+  width: 33.33%;
+}
+.pointer{
+  position:static;
+  /*sets the size of the  pointer as well as its position relative to the other items in its div*/
+
+  width:10px;
+  height:8px;
+  background-color:#515152;
+  border-radius:50%;
+  top:50%;
+  transform:translateY(-50%);
+ 
+}
+
+/*eye button code*/
+.input{
+  /*allows the position to be relative to the other things in its div and moves the items to be on the same line */
+  position:relative;
+  display:inline-block;
+  
+}
+#password{
+  /*adds right padding so it doesn't look cramped*/
+  padding-right:9px;
+}
+.file-button{
+  /*puts the element absolutely within its parent */
+  position:absolute;
+  /*aligns to the right edge*/
+  right:0;
+  /*aligns to the top edge*/
+  top:0;
+  /*aligns to the bottom edge*/
+  bottom:0;
+  /*puts padding so it doesnt look cramped*/
+  padding:6px;
+  /*sets background color*/
+  background-color:#f0f0f0;
+  /*creates small white border*/
+  border:1px solid #ccc;
+  /*changes the cursor so when we hover it looks different*/
+  cursor:pointer;
+  /*no text decoration and display it in the same line*/
+  text-decoration:none;
+  display:inline-block;
+}
+.file-button img{
+  /*sets the max width to be 100 percent so there isn't random blank space*/
+  max-width:100%;
+  max-height:100%;
+  /*makes it display as a block level element so it goes on a new line and takes up full space*/
+  display:block;
+}
+
+#eye{
+  /*makes the position absolute so we can control more where it is placed in relation to the other things in its div tag*/
+  position:absolute;
+  /*aligns it 5 px from the right of the div */
+  right:5px;
+  /*aligns it to the top edge*/
+  top:0;
+  /*aligns it to the bottom edge*/
+  bottom:0;
+  /*puts padding so it doesnt look cramped around teh edge*/
+  padding: 10px 20px;
+}
+
+#eyeImage{
+  /*positions it absolute within the container*/
+  position:absolute;
+  /*aligns the image 5 px from teh right */
+  right:5px;
+  /*aligns it to the top*/
+  top:0;
+  /*aligns it to teh bottom*/
+  bottom:0px;
+  /*puts padding so it doesnt look cramped and adjusts teh width and height of the eye image*/
+  padding:11px 15 px;
+  width:20px;
+  height:20px;
+}
